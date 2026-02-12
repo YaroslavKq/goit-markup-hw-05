@@ -759,11 +759,6 @@ h3 {
   color: #4d5ae5;
 }
 
-.privacy-policy-link:hover,
-.privacy-policy-link:focus {
-  text-decoration: none;
-}
-
 .send-button {
   display: block;
   border-radius: 4px;
