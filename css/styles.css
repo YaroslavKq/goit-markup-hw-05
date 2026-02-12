@@ -471,13 +471,18 @@ h3 {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: #31d0aa;
 }
 
 .footer-subscribe-label {
   display: block;
   margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .footer-subscribe-wrapper {
@@ -504,6 +509,7 @@ h3 {
   padding: 8px 16px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .subscribe-input:hover,
@@ -593,6 +599,7 @@ h3 {
   background: transparent;
   background-color: #e7e9fc;
   border-color: rgba(0, 0, 0, 0.1);
+  border-style: solid;
   border-radius: 100%;
   border-width: 1px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -685,6 +692,7 @@ h3 {
 .checkbox-wrapper {
   padding-top: 0;
   margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .terms-label {
@@ -692,7 +700,6 @@ h3 {
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-bottom: 24px;
 }
 
 .input-checkbox {
