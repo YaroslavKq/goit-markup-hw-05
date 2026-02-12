@@ -552,18 +552,28 @@
             </li>
           </ul>
         </div>
-        <div class="footer-subscribe">
-          <label class="footer-subscribe-label">Subscribe</label>
-          <div class="footer-subscribe-wrapper">
-            <input class="subscribe-input" type="email" placeholder="E-mail" />
-            <button class="subscribe-button" type="submit">
-              Subscribe
-              <svg hieght="24" width="24" class="subscribe-svg">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+        <form class="subscribe-form">
+          <div class="footer-subscribe">
+            <label class="footer-subscribe-label" for="email-subscriber"
+              >Subscribe</label
+            >
+            <div class="footer-subscribe-wrapper">
+              <input
+                class="subscribe-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                id="email-subscriber"
+              />
+              <button class="subscribe-button" type="submit">
+                Subscribe
+                <svg height="24" width="24" class="subscribe-svg">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </footer>
     <div class="modal-overlay" data-modal>
@@ -580,43 +590,61 @@
           </p>
 
           <div class="field-wrapper">
-            <label class="form-label">Name</label>
+            <label class="form-label" for="user-name">Name</label>
             <div class="field-wrapper-inner">
-              <input class="form-input" type="text" required />
+              <input
+                class="form-input"
+                type="text"
+                id="user-name"
+                name="name"
+                required
+              />
               <svg height="24" width="18" class="overlay-svg">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
           </div>
           <div class="field-wrapper">
-            <label class="form-label"> Phone</label>
+            <label class="form-label" for="user-phone"> Phone</label>
             <div class="field-wrapper-inner">
-              <input class="form-input" type="tel" />
+              <input
+                class="form-input"
+                id="user-phone"
+                name="phone"
+                type="tel"
+              />
               <svg height="24" width="18" class="overlay-svg">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
           <div class="field-wrapper">
-            <label class="form-label">Email</label>
+            <label class="form-label" for="user-email">Email</label>
             <div class="field-wrapper-inner">
-              <input class="form-input" type="email" required />
+              <input
+                class="form-input"
+                id="user-email"
+                name="email"
+                type="email"
+                required
+              />
               <svg height="24" width="18" class="overlay-svg">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
           <div class="field-wrapper">
-            <label class="form-label"> Comment</label>
+            <label class="form-label" for="user-comment"> Comment</label>
             <textarea
               class="comment-input"
               name="comment"
               placeholder="Text input"
               rows="5"
+              id="user-comment"
               required
             ></textarea>
           </div>
-          <div class="field-wrapper">
+          <div class="checkbox-wrapper">
             <input
               type="checkbox"
               id="user-terms"
@@ -631,11 +659,9 @@
                   <use href="./images/icons.svg#icon-approve"></use>
                 </svg>
               </span>
-              <div class="terms-wrapper">
-                I accept the terms and conditions of
-                <a class="privacy-policy-link" href="">the Privacy Policy</a>
-              </div></label
-            >
+              I accept the terms and conditions of
+              <a class="privacy-policy-link" href="">the Privacy Policy</a>
+            </label>
           </div>
           <button type="submit" class="send-button">Send</button>
         </form>
